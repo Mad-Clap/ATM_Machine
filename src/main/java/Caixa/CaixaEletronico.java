@@ -10,6 +10,8 @@ public class CaixaEletronico {
     private ArrayList <String> chaves = new ArrayList<String>();
     private final Scanner sc = new Scanner(System.in);
 
+    private
+
     Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
     private int day = calendar.get(Calendar.DATE);
     private int month = calendar.get(Calendar.MONTH) + 1;
@@ -437,12 +439,25 @@ public class CaixaEletronico {
                        if(chave.equals(n)) {existe=true; break;}
                    }
                }while (existe);
+
+               if(!contasDoCaixa.get(index).isNullPix()){
+                   String pix = contasDoCaixa.get(index).randomPix();
+                   for(int i=0;i<chaves.size();i++){
+                       if(pix.equals(chaves.get(i))) chaves.remove(i);
+                   }
+               }
+
                contasDoCaixa.get(index).setPIX(chave);
+
+               chaves.add(chave);
                PIX = " a chave aleatória: "+chave;
            }
        }
        System.out.println("Seu PIX agora é "+ PIX+"\n");
-
+       for(int i =0;i<chaves.size();i++){
+           System.out.print(chaves.get(i)+ " ");
+       }
+        System.out.println('\n');
 
 
     }

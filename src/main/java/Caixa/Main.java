@@ -1,17 +1,31 @@
 package Caixa;
 
-import java.io.*;
-import java.awt.GraphicsEnvironment;
-import java.net.URISyntaxException;
+import java.util.Scanner;
+
 public class Main {
-    public static void main (String [] args) throws IOException, InterruptedException, URISyntaxException{
-        Console console = System.console();
-        if(console == null && !GraphicsEnvironment.isHeadless()){
-            String filename = Menu.class.getProtectionDomain().getCodeSource().getLocation().toString().substring(6);
-            Runtime.getRuntime().exec(new String[]{"cmd","/c","start","cmd","/k","java -jar \"" + filename + "\""});
-        }else{
-            Menu.main(new String[0]);
-            System.out.println("Program has ended, please type 'exit' to close the console");
+    private static final Scanner sc = new Scanner(System.in);
+
+
+    public static void main(String[] args) {
+
+        CaixaEletronico caixa = new CaixaEletronico();
+        int menu = -1;
+        while(menu !=0){
+            System.out.println("***                           CAIXA ELETRÔNICO                            ***");
+            System.out.println("DATA DO SISTEMA: " + caixa.printarData() + "                                               ***\n");
+            System.out.println("(1) Abrir conta     (2) Acessar conta     (3) Andar no tempo     (0) Encerrar");
+
+            if(sc.hasNextInt()){menu = sc.nextInt();}
+            sc.nextLine();
+
+            switch (menu){
+                case 1 -> caixa.abrirConta();
+                case 2 -> caixa.acessarConta();
+                case 3 -> caixa.passarTempo();
+            }
+
         }
     }
+
 }
+

@@ -10,7 +10,6 @@ public class ContaPoupanca extends Conta {
     int year = calendar.get(Calendar.YEAR);
     boolean contaSalario =false;
 
-
     public ContaPoupanca(String nome, String cpf, String dataDeNascimento, String email, String telefone, int senha, String numeroDaConta) {
         super(nome, cpf, dataDeNascimento, email, telefone, senha, numeroDaConta);
     }

@@ -40,4 +40,7 @@ public abstract class Conta {
     public void setPIX(String PIX) {
         this.PIX = PIX;
     }
+    public boolean isNullPix(){return PIX==null;}
+
+    public String randomPix(){return PIX;}
 }
