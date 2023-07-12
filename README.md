@@ -24,7 +24,7 @@ A aplicação permite a criação de contas salário, que emulam o recebimento d
 
 
 ## Release 🚀
- ATM_1.0(https://github.com/Mad-Clap/ATM_Machine/releases/tag/ATM_1.0) 🔗
+ [ATM_1.0](https://github.com/Mad-Clap/ATM_Machine/releases/tag/ATM_1.0) 🔗
 
 
 ## Tecnologias Utilizadas 🛠️
