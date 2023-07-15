@@ -1,10 +1,10 @@
 
 # Caixa Eletrônico
-Desenvolvido para a matéria de Técnicas de Programação 2 de Sistemas de Informação da UNIRIO, o serviço de Caixa Eletrônico emula um caixa eletrônico, com criação de contas corrente, poupança ou salário; depósito, saque, transferência de dinheiro e pagamentos com boleto. O código ainda possui uma função de "andar no tempo" para conferir o acréscimo dos juros na conta poupança e do salário no mês em contas salário.
+O serviço de Caixa Eletrônico emula um caixa eletrônico, com criação de contas corrente, poupança ou salário; depósito, saque, transferência de dinheiro e pagamentos com boleto. O código ainda possui uma função de "andar no tempo" para conferir o acréscimo dos juros na conta poupança e do salário no mês em contas salário.
 A interação com o caixa eletrônico se dá por meio de um terminal.
 
 
-## Funcionalidades do serviço de Caixa Eletrônico
+## Funcionalidades
 
 ### 1. Abrir e acessar conta
 É possível abrir e acessar contas abertas no decorrer da execução da aplicação, assim acessando as funções emuladas de uma conta de banco.
